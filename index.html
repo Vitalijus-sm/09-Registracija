@@ -141,13 +141,68 @@ html {
         .or {
             font: normal normal normal 18px/21px Gill Sans MT;
             color: #000000;
-            padding-left: 14px;
+            padding-left: 24px;
         }
         .sign_in {
             font: normal normal normal 18px/21px Gill Sans MT;
             color: #00008B;
             padding-left: 24px;
         }
+        @media screen and (max-width: 664px) {
+            .left-column-container {
+                height: 100%;
+                padding-left: 20px;
+                margin-top: 0;
+            }
+
+            .right-column-container {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+
+            .right-column-bottom-action {
+                margin-top:50px;
+            }
+
+            .links {
+                bottom: 45px;
+            }
+
+            .or {
+                display:none !important;
+            }
+        }
+
+        @media screen and (max-width:500px) {
+            .btn {
+                font-size: 17px;
+            }
+
+            .left-column, .right-column {
+                width:100%
+            }
+
+            .left-column {
+                height: auto;
+            }
+
+            .links {
+                display:none;
+            }
+
+            .left-column-container {
+                background: none;
+            }
+
+            h1 {
+                padding-bottom:20px;
+            }
+
+            .or {
+                display:inline-block !important;
+            }
+        }
+
 
     </style>
 </head>
